@@ -14,7 +14,7 @@ function App() {
 
   const getWeatherData = async (searchName) => {
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=caab7ff0f39141e6a8731620212206&q=${searchName}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=caab7ff0f39141e6a8731620212206&q=${searchName}&aqi=no`
       // "http://api.weatherapi.com/v1/current.json?key=caab7ff0f39141e6a8731620212206&q=Hyderabad"
     )
       .then((res) => {
