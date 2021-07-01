@@ -21,3 +21,13 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+@media (max-width: 600px) {
+  html {
+    width: 100vw;
+    min-height: 100vh;
+  }
+  body {
+    display: block;
+  }
+}
