@@ -60,13 +60,16 @@ function App() {
       <h1 className="main_header">Weather condition</h1>
       <section className="input_container">
         <input
-          type="text"
           placeholder="City Name,country code...."
           ref={searchInput}
           className={`input ${!isValid && "empty"}`}
         />
         <span className="link">
-          <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes#Current_ISO_3166_country_codes">
+          <a
+            href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes#Current_ISO_3166_country_codes"
+            target="_blank"
+            rel="noreferrer"
+          >
             Check Your Country Code here
           </a>
         </span>
@@ -76,7 +79,7 @@ function App() {
       </section>
 
       <div className="display">
-        {!isNull ? (
+        {!isNull && searchName === weatherLocation.name ? (
           <>
             <section>
               <h1>

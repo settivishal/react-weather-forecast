@@ -6,28 +6,19 @@
 
 html {
   font-family: "Noto Sans JP", sans-serif;
+  min-height: 100vh;
 }
 
 body {
   margin: 0;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  background-image: url("./images/mist-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url("./images/mist-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-@media (max-width: 600px) {
-  html {
-    width: 100vw;
-    min-height: 100vh;
-  }
-  body {
-    display: block;
-  }
 }

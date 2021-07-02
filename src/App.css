@@ -14,7 +14,7 @@
   position: relative;
 }
 
-input[type="text"] {
+.input {
   border: 2px solid #222;
   border-radius: 5px;
   margin-right: auto;
@@ -37,6 +37,7 @@ input[type="text"] {
   border-radius: 5px;
   font-size: 1em;
   color: #eee;
+  outline: none;
   transition: all 0.1s ease-in-out;
 }
 
@@ -66,9 +67,12 @@ input[type="text"] {
   position: relative;
   min-height: 20em;
   min-width: 25em;
-  background-color: #cadbc8;
+  background-color: /*#cadbc8;*/ whitesmoke;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #222;
+  /* box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.2),
+    0px 0px 30px 5px rgba(0, 0, 0, 0.5); */
+  box-shadow: inset rgba(50, 50, 93, 0.3) 0px 0px 100px -20px,
+    rgba(0, 0, 0, 0.6) 0px 0px 60px -20px;
   padding: 10px;
 }
 
@@ -122,16 +126,17 @@ h1 .place {
 
 .no_data {
   position: absolute;
-  top: 35%;
-  left: 12%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 2.5rem;
   margin: 0;
   color: rgb(180, 33, 33);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .main_header {
-    margin: 20px 0;
+    margin: 10px 0 10px;
     letter-spacing: 1px;
   }
 
@@ -141,10 +146,11 @@ h1 .place {
     margin: auto;
   }
 
-  input[type="text"] {
+  .input {
     width: 100%;
     height: 40px;
     margin-bottom: 20px;
+    outline: none;
   }
   .input-btn {
     margin: 20px 0;
