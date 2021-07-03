@@ -3,7 +3,7 @@
   letter-spacing: 6px;
   text-transform: capitalize;
   text-align: center;
-  color: #eee;
+  color: #222;
 }
 
 .input_container {
@@ -22,6 +22,7 @@
   font-size: 1.2em;
   outline: none;
   max-width: 300px;
+  text-transform: capitalize;
 }
 
 .empty {
@@ -54,23 +55,21 @@
 }
 
 .link a {
-  color: white;
+  color: #222;
   text-decoration: none;
   letter-spacing: 3px;
 }
 
 .link a:hover {
-  color: #ddd;
+  color: rgb(207, 205, 205);
 }
 
 .display {
   position: relative;
   min-height: 20em;
-  min-width: 25em;
-  background-color: /*#cadbc8;*/ whitesmoke;
+  width: 25em;
+  background-color: rgb(216, 226, 236);
   border-radius: 10px;
-  /* box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.2),
-    0px 0px 30px 5px rgba(0, 0, 0, 0.5); */
   box-shadow: inset rgba(50, 50, 93, 0.3) 0px 0px 100px -20px,
     rgba(0, 0, 0, 0.6) 0px 0px 60px -20px;
   padding: 10px;
@@ -79,6 +78,7 @@
 .display h1 {
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
 }
 
 h1 .place {
@@ -98,13 +98,18 @@ h1 .place {
 } */
 
 .temp {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 10px 0;
+  color: chocolate;
+  font-weight: 600;
+  text-shadow: 3px 3px 3px#222;
 }
 
 .condition {
   font-size: 1.5rem;
   margin: 10px auto;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .refresh {
