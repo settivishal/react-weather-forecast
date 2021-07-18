@@ -169,7 +169,7 @@ h1 .place {
     left: 0%;
   }
   .display {
-    min-width: 10px;
+    width: 18em;
     margin: 0 30px;
     padding: 5px;
   }
