@@ -20,11 +20,15 @@ const Display = (props) => {
         }
         setIsNull(true);
         swal("Error!", "Enter valid City Name", "error");
+        throw new Error(res.status);
       })
       .then((data) => {
         setWeatherLocation(data.location);
         setWeatherCurrent(data.current);
         setWeatherCurrentCond(data.current.condition);
+      })
+      .catch((error) => {
+        console.error(error);
       });
   };
 
